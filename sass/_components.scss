@@ -1,0 +1,71 @@
+.nav {
+  &-img-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &-img {
+    width: 7rem;
+  }
+
+  &-link-container {
+    display: flex;
+    flex-grow: 1;
+    font-size: 2.4rem;
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+
+  &-link {
+    color: white;
+    font-weight: 500;
+    margin-right: 4rem;
+    text-decoration: none;
+  }
+
+  &-link:hover {
+    color: lightgray;
+  }
+
+  &-link:active {
+    color: lightgray;
+  }
+
+  &-link5 {
+    margin-right: 10rem;
+  }
+}
+
+.toggle-button {
+  position: absolute;
+  top: 2.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 4rem;
+  height: 2.5rem;
+
+  @media only screen and (max-width: 800px) {
+    display: flex;
+  }
+}
+
+.toggle-button .bar {
+  height: 0.4rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 1.5rem;
+}
