@@ -1,3 +1,6 @@
+//////////////////////////////////////////
+///  NAV BAR
+
 .nav {
   &-img-container {
     display: flex;
@@ -46,6 +49,40 @@
   &-link5 {
     margin-right: 10rem;
   }
+
+  &-toggle-nav {
+    position: fixed;
+    display: none;
+    top: 12vh;
+    left: 75vw;
+    width: 25vw;
+    background-color: #f51743;
+    justify-items: center;
+    padding: 2rem 0;
+    transition: all 0.3s ease-out;
+
+    ul {
+      list-style: none;
+    }
+  }
+
+  &-list-toggle {
+    margin-top: 1rem;
+  }
+
+  &-link-toggle {
+    color: white;
+    font-weight: 500;
+    margin-right: 4rem;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  &-link-toggle:hover {
+    color: lightgray;
+  }
 }
 
 .toggle-button {
@@ -68,4 +105,24 @@
   width: 100%;
   background-color: white;
   border-radius: 1.5rem;
+  transition: transform 0.2s ease-out;
 }
+
+.active {
+  display: flex;
+}
+
+.toggle-button.open .bar:nth-child(1) {
+  transform: translateY(1.05rem) rotate(45deg);
+}
+
+.toggle-button.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-button.open .bar:nth-child(3) {
+  transform: translateY(-1.05rem) rotate(-45deg);
+}
+
+/////////////////////////////////////////////
+///  REACTIVE HAMBURGER NAV
