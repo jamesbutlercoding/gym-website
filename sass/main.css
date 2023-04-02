@@ -52,24 +52,23 @@ html {
 .nav-link5 {
   margin-right: 10rem;
 }
+.nav ul {
+  list-style: none;
+}
+
 .nav-toggle-nav {
   position: fixed;
-  display: none;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
   top: 12vh;
   left: 75vw;
   width: 25vw;
   background-color: #f51743;
   justify-items: center;
-  padding: 2rem 0;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
-.nav-toggle-nav ul {
-  list-style: none;
-}
-.nav-list-toggle {
-  margin-top: 1rem;
-}
-.nav-link-toggle {
+.nav-toggle-link {
   color: white;
   font-weight: 500;
   margin-right: 4rem;
@@ -78,11 +77,33 @@ html {
   font-size: 2rem;
   margin-left: 1rem;
 }
-.nav-link-toggle:hover {
+.nav-toggle-list {
+  margin-top: 1rem;
+}
+.nav-toggle-link:hover {
   color: lightgray;
 }
-
-.toggle-button {
+.nav-toggle-button .bar {
+  height: 0.4rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 1.5rem;
+  transition: transform 0.2s ease-out;
+}
+.nav-toggle-button.open .bar:nth-child(1) {
+  transform: translateY(1.05rem) rotate(45deg);
+}
+.nav-toggle-button.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle-button.open .bar:nth-child(3) {
+  transform: translateY(-1.05rem) rotate(-45deg);
+}
+.nav-toggle-active {
+  max-height: 100%;
+  padding: 2rem 0;
+}
+.nav-toggle-button {
   position: absolute;
   top: 2.5rem;
   right: 1rem;
@@ -93,33 +114,9 @@ html {
   height: 2.5rem;
 }
 @media only screen and (max-width: 800px) {
-  .toggle-button {
+  .nav-toggle-button {
     display: flex;
   }
-}
-
-.toggle-button .bar {
-  height: 0.4rem;
-  width: 100%;
-  background-color: white;
-  border-radius: 1.5rem;
-  transition: transform 0.2s ease-out;
-}
-
-.active {
-  display: flex;
-}
-
-.toggle-button.open .bar:nth-child(1) {
-  transform: translateY(1.05rem) rotate(45deg);
-}
-
-.toggle-button.open .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.toggle-button.open .bar:nth-child(3) {
-  transform: translateY(-1.05rem) rotate(-45deg);
 }
 
 .nav {

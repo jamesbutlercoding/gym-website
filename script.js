@@ -1,14 +1,12 @@
-const hamburgerBtn = document.querySelector(".toggle-button");
+const hamburgerBtn = document.querySelector(".nav-toggle-button");
 const toggleNav = document.querySelector(".nav-toggle-nav");
 
 hamburgerBtn.addEventListener("click", function () {
-  console.log("click");
-  if (!toggleNav.classList.contains("active")) {
-    toggleNav.classList.add("active");
-    console.log("second stage");
+  if (!toggleNav.classList.contains("nav-toggle-active")) {
+    toggleNav.classList.add("nav-toggle-active");
     return;
   }
-  toggleNav.classList.remove("active");
+  toggleNav.classList.remove("nav-toggle-active");
 });
 
 // Add a click event listener to the toggle button
