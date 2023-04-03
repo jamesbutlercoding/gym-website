@@ -130,3 +130,72 @@
     }
   }
 }
+
+////////////////////////////////////
+/// HERO
+
+.hero {
+  &-heading {
+    color: white;
+    font-size: 4.8rem;
+    font-family: "Titillium Web";
+    font-weight: 300;
+  }
+
+  &-button {
+    background-color: transparent;
+    padding: 2rem;
+    color: white;
+    font-size: 3.2rem;
+    font-family: "Titillium Web";
+    font-weight: 300;
+    border: 3px white solid;
+    margin-top: 4rem;
+  }
+
+  &-button:hover {
+    transform: scale(1.05);
+  }
+
+  &-button:active {
+    color: lightgrey;
+    transform: scale(1.1);
+    border: 3.5px lightgrey solid;
+  }
+}
+
+/////////////////////////////////////////////////////////
+/// CTA
+
+.CTA {
+  &-header {
+    font-size: 4rem;
+    color: white;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    margin-right: 4rem;
+  }
+
+  &-header-span {
+    font-size: 4.2rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  &-button {
+    background-color: transparent;
+    padding: 1rem;
+    color: white;
+    font-size: 3.2rem;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    border: 3px white solid;
+  }
+
+  &-button:active {
+    transform: scale(1.1);
+    border: 3.5px lightgrey solid;
+  }
+}
+
+////////////////////////////////////
