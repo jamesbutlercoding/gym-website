@@ -46,7 +46,7 @@
     color: lightgray;
   }
 
-  &-link5 {
+  &-link6 {
     margin-right: 10rem;
   }
 
@@ -322,5 +322,56 @@
 
   &-paragraph {
     padding: 2rem;
+  }
+}
+
+///////////////////////////////////////////////
+/// FOOTER
+
+.footer {
+  &-list-1 {
+    display: flex;
+    list-style: none;
+    justify-self: center;
+    align-self: center;
+    margin-top: 3rem;
+  }
+
+  &-list-2 {
+    display: flex;
+    list-style: none;
+    align-self: center;
+    margin-top: 2rem;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+    font-family: "Poppins";
+    margin: 2rem;
+  }
+
+  &-logo-container {
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-start;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  &-logo {
+    margin-right: 2rem;
+    width: 5rem;
+  }
+
+  &-copyright {
+    color: white;
+    font-size: 2rem;
+    font-family: "Poppins";
+    margin-left: 2rem;
   }
 }

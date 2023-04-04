@@ -49,7 +49,7 @@ html {
 .nav-link:active {
   color: lightgray;
 }
-.nav-link5 {
+.nav-link6 {
   margin-right: 10rem;
 }
 .nav ul {
@@ -278,6 +278,44 @@ html {
   padding: 2rem;
 }
 
+.footer-list-1 {
+  display: flex;
+  list-style: none;
+  justify-self: center;
+  align-self: center;
+  margin-top: 3rem;
+}
+.footer-list-2 {
+  display: flex;
+  list-style: none;
+  align-self: center;
+  margin-top: 2rem;
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+  font-size: 2.4rem;
+  font-family: "Poppins";
+  margin: 2rem;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  justify-self: flex-start;
+  flex-grow: 1;
+  align-items: center;
+}
+.footer-logo {
+  margin-right: 2rem;
+  width: 5rem;
+}
+.footer-copyright {
+  color: white;
+  font-size: 2rem;
+  font-family: "Poppins";
+  margin-left: 2rem;
+}
+
 .nav {
   display: flex;
   background-color: #f51743;
@@ -321,6 +359,13 @@ html {
 .personal-trainer {
   background-color: #f6f6f6;
   padding-bottom: 8rem;
+}
+
+.footer {
+  background-color: #f51743;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
