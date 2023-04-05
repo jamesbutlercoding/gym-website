@@ -460,6 +460,31 @@ body {
   }
 }
 
+.hero-membership {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/hero-banner-membership-desktop.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+@media only screen and (max-width: 780px) {
+  .hero-membership {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/hero-banner-membership-tablet.jpg");
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero-membership {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/hero-banner-membership-phone.jpg");
+  }
+}
+
 .CTA {
   height: 20vh;
   background-color: #f51743;
@@ -485,6 +510,10 @@ body {
   height: 40vh;
   display: flex;
   flex-direction: column;
+}
+
+.membership-select {
+  background-color: white;
 }
 
 @font-face {
