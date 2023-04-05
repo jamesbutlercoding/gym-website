@@ -302,6 +302,9 @@ body {
   font-family: "Poppins";
   margin: 2rem;
 }
+.footer-link:hover {
+  color: lightgrey;
+}
 .footer-bottom {
   display: flex;
   justify-content: space-between;
