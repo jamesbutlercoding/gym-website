@@ -41,6 +41,42 @@
   }
 }
 
+.hero-about {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/images/hero-banner-about-desktop.jpg");
+  object-fit: cover;
+  object-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  @media only screen and (max-width: 780px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-about-tablet.jpg");
+  }
+
+  @media only screen and (max-width: 500px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-about-phone.jpg");
+  }
+}
+
 .CTA {
   height: 20vh;
   background-color: #f51743;
@@ -52,6 +88,13 @@
 .personal-trainer {
   background-color: #f6f6f6;
   padding-bottom: 8rem;
+}
+
+.main-content-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60rem 60rem 60rem 60rem;
+  margin: 10rem 0;
 }
 
 .footer {
