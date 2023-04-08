@@ -519,3 +519,161 @@
     font-size: 3rem;
   }
 }
+
+////////////////////////////////////////////////////
+/// MEMBERSHIP SELECT
+
+.membership-select {
+  &-heading {
+    font-size: 5rem;
+    color: #3a3a3a;
+    font-family: "Titillium Web";
+    margin-top: 4rem;
+  }
+
+  &-sub-heading {
+    font-size: 3rem;
+    color: #3a3a3a;
+    font-family: "Titillium Web";
+  }
+
+  &-sub-heading-1 {
+    margin-top: 2rem;
+  }
+
+  &-sub-heading-2 {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+  }
+
+  &__card {
+    background-color: #f6f6f6;
+    margin: 0 5rem;
+    width: calc(33% - 4em);
+    border-radius: 5px;
+    margin-bottom: 5rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+    &-heading {
+      padding: 2rem;
+      background-color: #f51743;
+      font-size: 3rem;
+      white-space: nowrap;
+      color: white;
+      font-family: "Poppins";
+      font-weight: 300;
+      text-align: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &-list {
+      list-style: none;
+    }
+
+    &-list-item {
+      font-size: 2rem;
+      font-family: "Poppins";
+      padding: 1.2rem;
+      text-align: center;
+    }
+
+    &-list-item-1 {
+      margin-top: 2rem;
+    }
+
+    &-list-item-link {
+      font-size: 1.8rem;
+      text-align: center;
+      color: #3a3a3a;
+      font-family: "Poppins";
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &-pass-top {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+  }
+
+  &-pass-heading {
+    font-size: 5rem;
+    font-family: "Titillium Web";
+    color: #3a3a3a;
+    margin-top: 5rem;
+  }
+
+  &-pass-subheading {
+    font-size: 2.8rem;
+    font-family: "Titillium Web";
+    color: #3a3a3a;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  &-pass-bottom {
+    display: grid;
+    grid-template-columns: 45vw 1fr;
+  }
+
+  &-pass-bottom-3 {
+    margin-bottom: 10rem;
+  }
+
+  &-pass-image {
+    max-width: 50vw;
+  }
+
+  &-pass-info {
+    background-color: #f51743;
+    color: white;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: 20%;
+  }
+
+  &-pass-list {
+    list-style: none;
+  }
+
+  &-pass-list-item {
+    font-size: 1.8rem;
+    font-family: "Poppins";
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-weight: 300;
+  }
+
+  &-pass-icon {
+    font-size: 4rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.image-vector {
+  color: green;
+}

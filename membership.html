@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/sass/main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
     <script src="/script.js" defer></script>
     <title>Gorillaz Gym</title>
   </head>
@@ -82,22 +92,351 @@
         Choose from one of our 3 passes.
       </h3>
       <div class="membership-select-container">
-        <div class="membership-select-card membership-select-card-1">
-          <h4 class="membership-select-card-heading"></h4>
-          <ul class="membership-select-card-list">
+        <div class="membership-select__card membership-select__card-1">
+          <h4 class="membership-select__card-heading">Beginner</h4>
+          <ul class="membership-select__card-list">
             <li
-              class="membership-select-card-list-item membership-select-card-list-item-1"
-            ></li>
+              class="membership-select__card-list-item membership-select__card-list-item-1"
+            >
+              £19.99 per/m
+            </li>
             <li
-              class="membership-select-card-list-item membership-select-card-list-item-2"
-            ></li>
+              class="membership-select__card-list-item membership-select__card-list-item-2"
+            >
+              All basic amennities
+            </li>
             <li
-              class="membership-select-card-list-item membership-select-card-list-item-3"
-            ></li>
+              class="membership-select__card-list-item membership-select__card-list-item-3"
+            >
+              No limit to access
+            </li>
+            <li class="membership-select__card-list-item-link">
+              Find out more:
+            </li>
           </ul>
         </div>
-        <div class="membership-select-card membership-select-card-2"></div>
-        <div class="membership-select-card membership-select-card-3"></div>
+        <div class="membership-select__card membership-select__card-2">
+          <h4 class="membership-select__card-heading">Advanced</h4>
+          <ul class="membership-select__card-list">
+            <li
+              class="membership-select__card-list-item membership-select__card-list-item-1"
+            >
+              £29.99 per/m
+            </li>
+            <li
+              class="membership-select__card-list-item membership-select__card-list-item-2"
+            >
+              Personalized workout plan
+            </li>
+            <li
+              class="membership-select__card-list-item membership-select__card-list-item-3"
+            >
+              Access to group fitness
+            </li>
+            <li class="membership-select__card-list-item-link">
+              Find out more:
+            </li>
+          </ul>
+        </div>
+        <div class="membership-select__card membership-select__card-3">
+          <h4 class="membership-select__card-heading">Premium</h4>
+          <ul class="membership-select__card-list">
+            <li
+              class="membership-select__card-list-item membership-select__card-list-item-1"
+            >
+              £49.99 per/m
+            </li>
+            <li
+              class="membership-select__card-list-item membership-select__card-list-item-2"
+            >
+              Sauna/Pool Access
+            </li>
+            <li
+              class="membership-select__card-list-item membership-select__card-list-item-3"
+            >
+              A personal training session
+            </li>
+            <li class="membership-select__card-list-item-link">
+              Find out more:
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="membership-select-pass-1 membership-select-pass">
+      <div class="membership-select-pass-top">
+        <h3
+          class="membership-select-pass-heading membership-select-pass-heading-1"
+        >
+          Beginner Membership
+        </h3>
+        <h4
+          class="membership-select-pass-subheading membership-select-pass-subheading-1"
+        >
+          Start your fitness journey with our affordable beginner membership.
+        </h4>
+      </div>
+      <div class="membership-select-pass-bottom">
+        <img
+          class="membership-select-pass-image-1 membership-select-pass-image"
+          src="/images/membership-image-1.jpg"
+          alt=""
+        />
+        <div class="membership-select-pass-info">
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-1"
+          >
+            24/7 access to the gym facilities
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-2"
+          >
+            Free induction session with a personal trainer
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-3"
+          >
+            A community of other beginners who are suppotive and motivational
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-4"
+          >
+            Access to all basic amennities
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-5"
+          >
+            No limit to the number of visits per month.
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="membership-select-pass-2 membership-select-pass">
+      <div class="membership-select-pass-top">
+        <h3
+          class="membership-select-pass-heading membership-select-pass-heading-1"
+        >
+          Advanced Membership
+        </h3>
+        <h4
+          class="membership-select-pass-subheading membership-select-pass-subheading-1"
+        >
+          Take your fitness to the next level with our advanced membership.
+        </h4>
+      </div>
+      <div class="membership-select-pass-bottom">
+        <img
+          class="membership-select-pass-image-2 membership-select-pass-image"
+          src="/images/membership-image-2-desktop.jpg"
+          alt=""
+        />
+        <div class="membership-select-pass-info">
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-1"
+          >
+            Includes all the benefits of the beginner membership.
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-2"
+          >
+            Access to personalized workout plans designed to help you achieve
+            your specific fitness goals.
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-3"
+          >
+            Access to a variety of group fitness classes, such as yoga, Pilates,
+            or cycling.
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-4"
+          >
+            Access to exclusive online resources, such as workout videos and
+            nutrition advice.
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-5"
+          >
+            Discounts on personal training sessions and other gym services.
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="membership-select-pass-3 membership-select-pass">
+      <div class="membership-select-pass-top">
+        <h3
+          class="membership-select-pass-heading membership-select-pass-heading-1"
+        >
+          Premium Membership
+        </h3>
+        <h4
+          class="membership-select-pass-subheading membership-select-pass-subheading-1"
+        >
+          Experience the ultimate fitness package with our premium membership.
+        </h4>
+      </div>
+      <div
+        class="membership-select-pass-bottom membership-select-pass-bottom-3"
+      >
+        <img
+          class="membership-select-pass-image-3 membership-select-pass-image"
+          src="/images/membership-image-3-desktop.jpg"
+          alt=""
+        />
+        <div class="membership-select-pass-info">
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-1"
+          >
+            Includes all the benefits of the advanced membership.
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-2"
+          >
+            Access to premium amenities such as a sauna, steam room, or swimming
+            pool.
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-3"
+          >
+            Monthly one-on-one personal training sessions with a certified
+            personal trainer.
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-4"
+          >
+            Priority booking for group fitness classes, so you can secure your
+            spot in popular classes
+          </h5>
+          <ion-icon
+            class="membership-select-pass-icon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h5
+            class="membership-select-pass-list-item membership-select-pass-list-item-5"
+          >
+            Access to luxury amenities such as a hot tub or massage services.
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <ul class="footer-list-1">
+        <li>
+          <a href="/about.html" class="footer-link footer-link1">About Us</a>
+        </li>
+        <li>
+          <a href="/services.html" class="footer-link footer-link2">Services</a>
+        </li>
+        <li>
+          <a href="/membership.html" class="footer-link footer-link3"
+            >Memberships</a
+          >
+        </li>
+        <li>
+          <a href="/testimonial.html" class="footer-link footer-link4"
+            >Testimonials</a
+          >
+        </li>
+        <li>
+          <a href="/contact.html" class="footer-link footer-link5"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#" class="footer-link footer-link5">Home</a>
+        </li>
+      </ul>
+      <ul class="footer-list-2">
+        <li>
+          <a href="#" class="footer-link footer-link6">Membership Queries</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link footer-link7"
+            >Membership Cancellation</a
+          >
+        </li>
+        <li>
+          <a href="#" class="footer-link footer-link8">Membership Upgrade</a>
+        </li>
+      </ul>
+      <div class="footer-bottom">
+        <p class="footer-copyright">©Coded by James Butler</p>
+        <div class="footer-logo-container">
+          <a class="footer-link" href="https://www.facebook.com"
+            ><img
+              class="footer-logo footer-logo-1"
+              src="/images/facebook-icon.png"
+              alt=""
+          /></a>
+          <a class="footer-link" href="https://www.instagram.com"
+            ><img
+              class="footer-logo footer-logo-1"
+              src="/images/instagram-logo.png"
+              alt=""
+          /></a>
+          <a class="footer-link" href="https://twitter.com/"
+            ><img
+              class="footer-logo footer-logo-1"
+              src="/images/twitter-logo.png"
+              alt=""
+          /></a>
+        </div>
       </div>
     </div>
   </body>
