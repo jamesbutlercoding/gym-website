@@ -532,19 +532,59 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.swiper {
-  width: 95vw;
-  height: 60vh;
-  background-color: #f6f6f6;
-}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  display: flex;
+  background-color: #f6f6f6;
+  display: flex !important;
   justify-content: center;
   align-items: center;
-  background-color: #f6f6f6;
+}
+.swiper-image-container {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.swiper-image {
+  width: 25rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+.swiper-content {
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.swiper-content-name {
+  font-size: 2.6rem;
+  font-family: "Poppins";
+  color: #3a3a3a;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.swiper-content-review {
+  font-size: 2rem;
+  font-family: "Poppins";
+  color: #474747;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.swiper-content-star {
+  color: #f51743;
+  font-size: 3rem;
+}
+.swiper-button-next {
+  color: #f51743 !important;
+}
+.swiper-button-prev {
+  color: #f51743 !important;
 }
 
 .nav {
@@ -552,6 +592,9 @@ body {
   background-color: #f51743;
   height: 12vh;
   align-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .hero {
@@ -688,6 +731,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.swiper {
+  width: 95vw;
+  height: 60vh;
+  background-color: #f6f6f6;
+}
+
+.success-stories {
+  height: 50vh;
+  background-color: white;
 }
 
 @font-face {

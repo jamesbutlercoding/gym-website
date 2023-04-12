@@ -678,17 +678,67 @@
 /// SWIPER
 
 .swiper {
-  width: 95vw;
-  height: 60vh;
-  background-color: #f6f6f6;
-
   &-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    display: flex;
+    background-color: #f6f6f6;
+    display: flex !important;
     justify-content: center;
     align-items: center;
-    background-color: #f6f6f6;
+  }
+
+  &-image-container {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  &-image {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  &-content {
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  &-content-name {
+    font-size: 2.6rem;
+    font-family: "Poppins";
+    color: #3a3a3a;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+
+  &-content-review {
+    font-size: 2rem;
+    font-family: "Poppins";
+    color: #474747;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+
+  &-content-star-rating {
+  }
+
+  &-content-star {
+    color: #f51743;
+    font-size: 3rem;
+  }
+
+  &-button-next {
+    color: #f51743 !important;
+  }
+
+  &-button-prev {
+    color: #f51743 !important;
   }
 }

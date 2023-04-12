@@ -9,6 +9,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
     <script src="/script.js" defer></script>
 
     <title>Gorillaz Gym</title>
@@ -86,31 +100,99 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide-1">
-          <img src="/images/testimonials-headshot-1.jpg" alt="" />
+          <div class="swiper-image-container swiper-image-container-1">
+            <img
+              class="swiper-image swiper-image-1"
+              src="/images/testimonials-headshot-1.jpg"
+              alt=""
+            />
+          </div>
           <div class="swiper-content">
-            <h3 class="swiper-content-name swiper-content-name-1"></h3>
-            <p class="swiper-content-review swiper-content-review-1"></p>
+            <h3 class="swiper-content-name swiper-content-name-1">James</h3>
+            <p class="swiper-content-review swiper-content-review-1">
+              "I've never felt more motivated to work out than at this gym. The
+              trainers are top-notch and the equipment is state-of-the-art!"
+            </p>
+            <div class="swiper-content-star-rating">
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star-half"></ion-icon>
+            </div>
           </div>
         </div>
         <div class="swiper-slide swiper-slide-2">
-          <img src="/images/testimonials-headshot-2.jpg" alt="" />
+          <div class="swiper-image-container swiper-image-container-2">
+            <img
+              class="swiper-image swiper-image-2"
+              src="/images/testimonials-headshot-2.jpg"
+              alt=""
+            />
+          </div>
           <div class="swiper-content">
-            <h3 class="swiper-content-name swiper-content-name-1"></h3>
-            <p class="swiper-content-review swiper-content-review-1"></p>
+            <h3 class="swiper-content-name swiper-content-name-2">Amanda</h3>
+            <p class="swiper-content-review swiper-content-review-2">
+              "I've been a member for 6 months and have already seen amazing
+              results. This gym has truly transformed my body and my life."
+            </p>
+            <div class="swiper-content-star-rating">
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon
+                class="swiper-content-star"
+                name="star-outline"
+              ></ion-icon>
+            </div>
           </div>
         </div>
         <div class="swiper-slide swiper-slide-3">
-          <img src="/images/testimonials-headshot-3.jpg" alt="" />
+          <div class="swiper-image-container image-container-3">
+            <img
+              class="swiper-image swiper-image-3"
+              src="/images/testimonials-headshot-3.jpg"
+              alt=""
+            />
+          </div>
           <div class="swiper-content">
-            <h3 class="swiper-content-name swiper-content-name-1"></h3>
-            <p class="swiper-content-review swiper-content-review-1"></p>
+            <h3 class="swiper-content-name swiper-content-name-3">Olivia</h3>
+            <p class="swiper-content-review swiper-content-review-3">
+              "The atmosphere at this gym is unbeatable. Everyone is so
+              supportive and friendly, it's like a second home to me."
+            </p>
+            <div class="swiper-content-star-rating">
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+            </div>
           </div>
         </div>
         <div class="swiper-slide swiper-slide-4">
-          <img src="/images/testimonials-headshot-4.jpg" alt="" />
+          <div class="swiper-image-container swiper-image-container-4">
+            <img
+              class="swiper-image swiper-image-4"
+              src="/images/testimonials-headshot-4.jpg"
+              alt=""
+            />
+          </div>
           <div class="swiper-content">
-            <h3 class="swiper-content-name swiper-content-name-1"></h3>
-            <p class="swiper-content-review swiper-content-review-1"></p>
+            <h3 class="swiper-content-name swiper-content-name-4">Isabella</h3>
+            <p class="swiper-content-review swiper-content-review-4">
+              "I used to hate going to the gym, but this one has changed my mind
+              completely. It's a great place to workout and unwind after a long
+              day."
+            </p>
+            <div class="swiper-content-star-rating">
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star"></ion-icon>
+              <ion-icon class="swiper-content-star" name="star-half"></ion-icon>
+            </div>
           </div>
         </div>
       </div>
@@ -118,22 +200,53 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <div class="success-stories">
+      <h2 class="success-stories-heading">View some success stories</h2>
+      <div class="success-stories-1">
+        <div class="success-stories-image-container">
+          <img
+            class="success-stories-image success-stories-before-image"
+            src="/images/before-image-1.jpg"
+            alt=""
+          />
+          <img
+            class="success-stories-image success-stories-after-image"
+            src="/images/after-image-1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="success-stories-content"></div>
+      </div>
+      <div class="success-stories-2">
+        <div class="success-stories-image-container">
+          <img
+            class="success-stories-image success-stories-before-image"
+            src="/images/before-image-2.jpg"
+            alt=""
+          />
+          <img
+            class="success-stories-image success-stories-after-image"
+            src="/images/after-image-2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="success-stories-content"></div>
+      </div>
+      <div class="success-stories-3">
+        <div class="success-stories-image-container">
+          <img
+            class="success-stories-image success-stories-before-image"
+            src="/images/before-image-3.jpg"
+            alt=""
+          />
+          <img
+            class="success-stories-image success-stories-after-image"
+            src="/images/after-image-3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="success-stories-content"></div>
+      </div>
+    </div>
   </body>
 </html>

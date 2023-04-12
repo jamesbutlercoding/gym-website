@@ -3,6 +3,9 @@
   background-color: #f51743;
   height: 12vh;
   align-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .hero {
@@ -183,4 +186,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.swiper {
+  width: 95vw;
+  height: 60vh;
+  background-color: #f6f6f6;
+}
+
+.success-stories {
+  height: 50vh;
+  background-color: white;
 }
