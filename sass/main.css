@@ -532,8 +532,19 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.image-vector {
-  color: green;
+.swiper {
+  width: 95vw;
+  height: 60vh;
+  background-color: #f6f6f6;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
 }
 
 .nav {
@@ -615,6 +626,31 @@ body {
 @media only screen and (max-width: 500px) {
   .hero-membership {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/hero-banner-membership-phone.jpg");
+  }
+}
+
+.hero-testimonial {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/hero-banner-testimonial-desktop.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+@media only screen and (max-width: 780px) {
+  .hero-testimonial {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/hero-banner-testimonial-tablet.jpg");
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero-testimonial {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/hero-banner-testimonial-phone.jpg");
   }
 }
 

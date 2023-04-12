@@ -1,5 +1,9 @@
+"use strict";
+
 const hamburgerBtn = document.querySelector(".nav-toggle-button");
 const toggleNav = document.querySelector(".nav-toggle-nav");
+
+// Hamburger nav functionality
 
 hamburgerBtn.addEventListener("click", function () {
   if (!toggleNav.classList.contains("nav-toggle-active")) {
@@ -14,3 +18,5 @@ hamburgerBtn.addEventListener("click", function () {
   // Toggle the 'open' class on the toggle button element
   hamburgerBtn.classList.toggle("open");
 });
+
+

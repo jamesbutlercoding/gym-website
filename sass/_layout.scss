@@ -113,6 +113,42 @@
   }
 }
 
+.hero-testimonial {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/images/hero-banner-testimonial-desktop.jpg");
+  object-fit: cover;
+  object-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  @media only screen and (max-width: 780px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-testimonial-tablet.jpg");
+  }
+
+  @media only screen and (max-width: 500px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-testimonial-phone.jpg");
+  }
+}
+
 .CTA {
   height: 20vh;
   background-color: #f51743;
@@ -148,4 +184,3 @@
   align-items: center;
   flex-direction: column;
 }
-

@@ -674,6 +674,21 @@
   }
 }
 
-.image-vector {
-  color: green;
+/////////////////////////////////////////////////////////////////////////////
+/// SWIPER
+
+.swiper {
+  width: 95vw;
+  height: 60vh;
+  background-color: #f6f6f6;
+
+  &-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+  }
 }
