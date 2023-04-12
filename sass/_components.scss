@@ -74,7 +74,7 @@
 
   &-link {
     color: white;
-    font-weight: 500;
+    font-weight: 400;
     margin-right: 4rem;
     text-decoration: none;
     font-family: "Poppins";
@@ -137,7 +137,7 @@
 .hero {
   &-heading {
     color: white;
-    font-size: 4.8rem;
+    font-size: 5rem;
     font-family: "Titillium Web";
     font-weight: 300;
   }
@@ -209,6 +209,7 @@
     text-align: center;
     padding: 8rem;
     margin-bottom: 3rem;
+    font-weight: 300;
   }
 }
 
@@ -347,7 +348,7 @@
   &-link {
     text-decoration: none;
     color: white;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-family: "Poppins";
     margin: 2rem;
   }
@@ -369,12 +370,12 @@
 
   &-logo {
     margin-right: 2rem;
-    width: 5rem;
+    width: 4.5rem;
   }
 
   &-copyright {
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: "Poppins";
     margin-left: 2rem;
   }
@@ -390,7 +391,7 @@
 
   &-container-text {
     color: #3a3a3a;
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding: 3rem;
     margin-top: 3rem;
     font-family: "Poppins";
@@ -528,11 +529,13 @@
     font-size: 5rem;
     color: #3a3a3a;
     font-family: "Titillium Web";
+    font-weight: 300;
     margin-top: 4rem;
   }
 
   &-sub-heading {
     font-size: 3rem;
+    font-weight: 300;
     color: #3a3a3a;
     font-family: "Titillium Web";
   }
@@ -614,14 +617,16 @@
     font-family: "Titillium Web";
     color: #3a3a3a;
     margin-top: 5rem;
+    font-weight: 300;
   }
 
   &-pass-subheading {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-family: "Titillium Web";
     color: #3a3a3a;
     margin-top: 3rem;
     margin-bottom: 5rem;
+    font-weight: 300;
   }
 
   &-pass-bottom {
@@ -740,5 +745,68 @@
 
   &-button-prev {
     color: #f51743 !important;
+  }
+}
+
+.success-stories {
+  &-heading {
+    font-size: 5rem;
+    color: #3a3a3a;
+    font-family: "Titillium Web";
+    padding: 8rem;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  &-1,
+  &-2,
+  &-3 {
+    display: flex;
+  }
+
+  &-after-image {
+  }
+
+  &-image-container {
+    position: relative;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  &-before-image {
+    width: 35rem;
+    transition: opacity 1s ease-in-out;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &-before-image:hover {
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &-content {
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-name {
+    font-size: 3rem;
+    font-family: "Poppins";
+    color: #3a3a3a;
+    align-self: flex-start;
+  }
+
+  &-paragraph {
+    margin-right: 6rem;
+    font-size: 2rem;
+    font-family: "Poppins";
+    font-weight: 300;
+    color: #474747;
+    margin-top: 2rem;
   }
 }
