@@ -1,6 +1,17 @@
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+
 html {
   font-size: 62.5%;
   box-sizing: inherit;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 45%;
+  }
 }
 
 *,

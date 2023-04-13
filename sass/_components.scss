@@ -61,14 +61,18 @@
 .nav-toggle {
   &-nav {
     position: fixed;
+
     display: flex;
     max-height: 0;
     overflow: hidden;
     top: 12vh;
-    left: 75vw;
-    width: 25vw;
+    left: 60vw;
+    width: 40vw;
+    height: 40rem;
     background-color: #f51743;
     justify-items: center;
+    opacity: 0.95;
+
     transition: all 0.5s ease-out;
   }
 
@@ -78,12 +82,22 @@
     margin-right: 4rem;
     text-decoration: none;
     font-family: "Poppins";
-    font-size: 2rem;
+    font-size: 3.2rem;
     margin-left: 1rem;
+    text-align: center;
+  }
+
+  &-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
   }
 
   &-list {
     margin-top: 1rem;
+    flex-grow: 1;
   }
 
   &-link:hover {
@@ -117,7 +131,7 @@
 
   &-button {
     position: absolute;
-    top: 2.5rem;
+    top: 3.5rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -151,6 +165,11 @@
     font-weight: 300;
     border: 3px white solid;
     margin-top: 4rem;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: white;
   }
 
   &-button:hover {
@@ -195,6 +214,11 @@
   &-button:active {
     transform: scale(1.1);
     border: 3.5px lightgrey solid;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: white;
   }
 }
 
@@ -765,6 +789,7 @@
   }
 
   &-after-image {
+    width: 35rem;
   }
 
   &-image-container {
@@ -820,6 +845,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15rem 15rem 15rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 90vw;
+    }
   }
 
   &-header {
