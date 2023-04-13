@@ -152,6 +152,114 @@
   }
 }
 
+.hero-testimonial {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/images/hero-banner-testimonial-desktop.jpg");
+  object-fit: cover;
+  object-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  @media only screen and (max-width: 780px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-testimonial-tablet.jpg");
+  }
+
+  @media only screen and (max-width: 500px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-testimonial-phone.jpg");
+  }
+}
+
+.hero-services {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/images/hero-banner-services-desktop.jpg");
+  object-fit: cover;
+  object-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  @media only screen and (max-width: 780px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-services-tablet.jpg");
+  }
+
+  @media only screen and (max-width: 500px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-services-phone.jpg");
+  }
+}
+
+.hero-contact {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/images/hero-banner-contact-desktop.jpg");
+  object-fit: cover;
+  object-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  @media only screen and (max-width: 780px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-contact-tablet.jpg");
+  }
+
+  @media only screen and (max-width: 500px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/images/hero-banner-contact-phone.jpg");
+  }
+}
+
 .CTA {
   height: 20vh;
   background-color: #f51743;
@@ -165,7 +273,8 @@
   padding-bottom: 8rem;
 }
 
-.main-content-about {
+.main-content-about,
+.main-content-services {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 60rem 60rem 60rem 60rem;
@@ -196,4 +305,11 @@
 
 .success-stories {
   background-color: white;
+}
+
+.form {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
 }
