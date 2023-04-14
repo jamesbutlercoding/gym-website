@@ -324,7 +324,7 @@ body {
 }
 @media only screen and (max-width: 50em) {
   .flip-card {
-    height: 72rem;
+    height: 68rem;
     width: 60rem;
   }
 }
@@ -382,6 +382,16 @@ body {
   padding: 2rem;
 }
 
+.footer-list-container {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 41.25em) {
+  .footer-list-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .footer-list-1 {
   display: flex;
   list-style: none;
@@ -389,11 +399,27 @@ body {
   align-self: center;
   margin-top: 3rem;
 }
+@media only screen and (max-width: 41.25em) {
+  .footer-list-1 {
+    flex-direction: column;
+    justify-self: flex-end;
+    align-self: flex-start;
+    margin-top: 3rem;
+  }
+}
 .footer-list-2 {
   display: flex;
   list-style: none;
   align-self: center;
   margin-top: 2rem;
+}
+@media only screen and (max-width: 41.25em) {
+  .footer-list-2 {
+    flex-direction: column;
+    justify-self: flex-end;
+    align-self: flex-start;
+    margin-top: 3rem;
+  }
 }
 .footer-link {
   text-decoration: none;
@@ -411,6 +437,8 @@ body {
   justify-self: flex-start;
   flex-grow: 1;
   align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 .footer-logo {
   margin-right: 2rem;
@@ -1207,19 +1235,8 @@ body {
 
 .footer {
   background-color: #f51743;
-  height: 40vh;
   display: flex;
   flex-direction: column;
-}
-@media only screen and (max-width: 75em) {
-  .footer {
-    height: 35vh;
-  }
-}
-@media only screen and (max-width: 62.5em) {
-  .footer {
-    height: 30vh;
-  }
 }
 
 .membership-select {
