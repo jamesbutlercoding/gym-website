@@ -279,6 +279,11 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 60rem 60rem 60rem 60rem;
   margin: 10rem 0;
+
+  @media only screen and (max-width: $bp-mediumish) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60rem 45rem 60rem 45rem 60rem 45rem 60rem 45rem;
+  }
 }
 
 .footer {
