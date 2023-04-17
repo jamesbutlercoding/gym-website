@@ -1,11 +1,15 @@
 .nav {
   display: flex;
   background-color: #f51743;
-  height: 12vh;
+  height: 8rem;
   align-content: center;
   position: sticky;
   top: 0;
   z-index: 100;
+
+  @media only screen and (max-width: $bp-largest) {
+    height: 10rem;
+  }
 }
 
 .hero {
@@ -261,11 +265,11 @@
 }
 
 .CTA {
-  height: 20vh;
   background-color: #f51743;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 
 .personal-trainer {

@@ -12,6 +12,16 @@ html {
     font-size: 45%;
   }
 }
+@media only screen and (max-width: 41.25em) {
+  html {
+    font-size: 42.5%;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  html {
+    font-size: 37.5%;
+  }
+}
 
 *,
 *::after,
@@ -77,10 +87,10 @@ body {
 
 .nav-toggle-nav {
   position: fixed;
+  top: 10rem;
   display: flex;
   max-height: 0;
   overflow: hidden;
-  top: 12vh;
   width: 100vw;
   height: 90vh;
   background-color: #f51743;
@@ -135,7 +145,7 @@ body {
 .nav-toggle-button {
   position: absolute;
   top: 3.5rem;
-  right: 1rem;
+  right: 2rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -328,6 +338,18 @@ body {
     width: 60rem;
   }
 }
+@media only screen and (max-width: 41.25em) {
+  .flip-card {
+    height: 60rem;
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  .flip-card {
+    height: 55rem;
+    width: 43rem;
+  }
+}
 .flip-front, .flip-back {
   height: 100%;
   width: 100%;
@@ -376,6 +398,11 @@ body {
 @media only screen and (max-width: 50em) {
   .flip-back {
     font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  .flip-back {
+    font-size: 2rem;
   }
 }
 .flip-paragraph {
@@ -703,6 +730,30 @@ body {
   margin-bottom: 5rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 50em) {
+  .membership-select-pass-subheading {
+    display: none;
+  }
+}
+.membership-select-pass-subheading-small {
+  font-size: 3rem;
+  font-family: "Titillium Web";
+  color: #3a3a3a;
+  font-weight: 300;
+  display: none;
+}
+@media only screen and (max-width: 50em) {
+  .membership-select-pass-subheading-small {
+    display: block;
+  }
+}
+.membership-select-pass-subheading-small-1 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.membership-select-pass-subheading-small-2 {
+  margin-bottom: 5rem;
+}
 .membership-select-pass-bottom {
   display: grid;
   grid-template-columns: 45vw 1fr;
@@ -833,6 +884,11 @@ body {
 .success-stories-1, .success-stories-2, .success-stories-3 {
   display: flex;
 }
+@media only screen and (max-width: 34.375em) {
+  .success-stories-1, .success-stories-2, .success-stories-3 {
+    flex-direction: column;
+  }
+}
 .success-stories-after-image {
   width: 35rem;
 }
@@ -840,6 +896,11 @@ body {
   position: relative;
   margin-left: 5rem;
   margin-bottom: 5rem;
+}
+@media only screen and (max-width: 34.375em) {
+  .success-stories-image-container {
+    margin: 8rem auto;
+  }
 }
 .success-stories-before-image {
   width: 35rem;
@@ -859,11 +920,21 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (max-width: 34.375em) {
+  .success-stories-content {
+    margin-left: 0;
+  }
+}
 .success-stories-name {
   font-size: 3rem;
   font-family: "Poppins";
   color: #3a3a3a;
   align-self: flex-start;
+}
+@media only screen and (max-width: 34.375em) {
+  .success-stories-name {
+    align-self: center;
+  }
 }
 .success-stories-paragraph {
   margin-right: 6rem;
@@ -872,6 +943,13 @@ body {
   font-weight: 300;
   color: #474747;
   margin-top: 2rem;
+}
+@media only screen and (max-width: 34.375em) {
+  .success-stories-paragraph {
+    align-self: center;
+    margin-right: 0;
+    padding: 4rem;
+  }
 }
 
 .form-form {
@@ -1084,11 +1162,16 @@ body {
 .nav {
   display: flex;
   background-color: #f51743;
-  height: 12vh;
+  height: 8rem;
   align-content: center;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+@media only screen and (max-width: 75em) {
+  .nav {
+    height: 10rem;
+  }
 }
 
 .hero {
@@ -1267,11 +1350,11 @@ body {
 }
 
 .CTA {
-  height: 20vh;
   background-color: #f51743;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 
 .personal-trainer {
