@@ -390,6 +390,14 @@
     @media only screen and (max-width: $bp-small) {
       background-image: url("/images/personal-trainer-1-phone.jpg");
     }
+
+    @media only screen and (max-width: $bp-extremely-small) {
+      background-image: url("/images/personal-trainer-1-phone-s.jpg");
+    }
+
+    @media only screen and (max-width: $bp-extremely-smallx2) {
+      background-image: url("/images/personal-trainer-1-phone-xs.jpg");
+    }
   }
 
   &-front-2 {
@@ -399,6 +407,13 @@
 
     @media only screen and (max-width: $bp-small) {
       background-image: url("/images/personal-trainer-2-phone.jpg");
+    }
+    @media only screen and (max-width: $bp-extremely-small) {
+      background-image: url("/images/personal-trainer-2-phone-s.jpg");
+    }
+
+    @media only screen and (max-width: $bp-extremely-smallx2) {
+      background-image: url("/images/personal-trainer-2-phone-xs.jpg");
     }
   }
 
@@ -410,6 +425,14 @@
     @media only screen and (max-width: $bp-small) {
       background-image: url("/images/personal-trainer-3-phone.jpg");
     }
+
+    @media only screen and (max-width: $bp-extremely-small) {
+      background-image: url("/images/personal-trainer-3-phone-s.jpg");
+    }
+
+    @media only screen and (max-width: $bp-extremely-smallx2) {
+      background-image: url("/images/personal-trainer-3-phone-xs.jpg");
+    }
   }
 
   &-front-4 {
@@ -419,6 +442,14 @@
 
     @media only screen and (max-width: $bp-small) {
       background-image: url("/images/personal-trainer-4-phone.jpg");
+    }
+
+    @media only screen and (max-width: $bp-extremely-small) {
+      background-image: url("/images/personal-trainer-4-phone-s.jpg");
+    }
+
+    @media only screen and (max-width: $bp-extremely-smallx2) {
+      background-image: url("/images/personal-trainer-4-phone-xs.jpg");
     }
   }
 
