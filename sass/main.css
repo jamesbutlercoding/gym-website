@@ -92,7 +92,7 @@ body {
   max-height: 0;
   overflow: hidden;
   width: 100vw;
-  height: 90vh;
+  height: 95vh;
   background-color: #f51743;
   justify-items: center;
   opacity: 0.95;
@@ -309,19 +309,19 @@ body {
     grid-row: 7/8;
   }
 }
-.flip-container-1:hover > .flip-card-1 {
+.flip-container-1:hover > .flip-card-1, .flip-container-1:active > .flip-card-1 {
   cursor: pointer;
   transform: rotateY(180deg);
 }
-.flip-container-2:hover > .flip-card-2 {
+.flip-container-2:hover > .flip-card-2, .flip-container-2:active > .flip-card-2 {
   cursor: pointer;
   transform: rotateY(180deg);
 }
-.flip-container-3:hover > .flip-card-3 {
+.flip-container-3:hover > .flip-card-3, .flip-container-3:active > .flip-card-3 {
   cursor: pointer;
   transform: rotateY(180deg);
 }
-.flip-container-4:hover > .flip-card-4 {
+.flip-container-4:hover > .flip-card-4, .flip-container-4:active > .flip-card-4 {
   cursor: pointer;
   transform: rotateY(180deg);
 }
@@ -365,12 +365,22 @@ body {
   -o-object-position: center;
      object-position: center;
 }
+@media only screen and (max-width: 41.25em) {
+  .flip-front-1 {
+    background-image: url("/images/personal-trainer-1-phone.jpg");
+  }
+}
 .flip-front-2 {
   background-image: url("/images/personal-trainer-2.jpg");
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+@media only screen and (max-width: 41.25em) {
+  .flip-front-2 {
+    background-image: url("/images/personal-trainer-2-phone.jpg");
+  }
 }
 .flip-front-3 {
   background-image: url("/images/personal-trainer-3.jpg");
@@ -379,12 +389,22 @@ body {
   -o-object-position: center;
      object-position: center;
 }
+@media only screen and (max-width: 41.25em) {
+  .flip-front-3 {
+    background-image: url("/images/personal-trainer-3-phone.jpg");
+  }
+}
 .flip-front-4 {
   background-image: url("/images/personal-trainer-4.jpg");
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+@media only screen and (max-width: 41.25em) {
+  .flip-front-4 {
+    background-image: url("/images/personal-trainer-4-phone.jpg");
+  }
 }
 .flip-back {
   background-color: #3a3a3a;
@@ -454,6 +474,11 @@ body {
   font-size: 2.2rem;
   font-family: "Poppins";
   margin: 2rem;
+}
+@media only screen and (max-width: 28.125em) {
+  .footer-link {
+    font-size: 2rem;
+  }
 }
 .footer-link:hover {
   color: lightgrey;
@@ -783,6 +808,11 @@ body {
   grid-template-columns: 10rem 1fr;
   grid-template-rows: 20%;
 }
+@media only screen and (max-width: 50em) {
+  .membership-select-pass-info {
+    grid-template-columns: 8rem 1fr;
+  }
+}
 .membership-select-pass-list {
   list-style: none;
 }
@@ -801,6 +831,11 @@ body {
     font-size: 2.1em;
   }
 }
+@media only screen and (max-width: 28.125em) {
+  .membership-select-pass-list-item {
+    font-size: 1.9rem;
+  }
+}
 .membership-select-pass-icon {
   font-size: 4rem;
   margin-right: 1rem;
@@ -815,6 +850,11 @@ body {
 @media only screen and (max-width: 50em) {
   .membership-select-pass-icon {
     font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  .membership-select-pass-icon {
+    font-size: 4rem;
   }
 }
 
